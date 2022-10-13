@@ -1,9 +1,19 @@
+:root {
+  --text: #262626;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
 }
 
 a {
@@ -11,16 +21,79 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.content {
+  width: 935px;
+  margin: 0 auto;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+
+
+@media (max-width: 1200px) { 
+  .content {
+    width: 100%;
   }
-  body {
-    color: white;
-    background: black;
-  }
+}
+
+.content--inner {
+  padding: 0 1rem;
+}
+
+.brand-title {
+  margin: 0;
+  font-family: 'Cookie', cursive;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.footer { 
+  border-top: 1px solid #DBDBDB;
+  height: 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.icon__link {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__links {
+  gap: 0.25rem;
+  display: flex;
+}
+
+.profile__header {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.profile__title {
+  margin: 0 0 0 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.profile__profile-picture {
+  border-radius: 50%;
 }
