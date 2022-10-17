@@ -5,17 +5,12 @@ import Image from "next/image";
 import MyProfile from "../components/MyProfile";
 import { getAuthenticatedUser } from "../model/getAuthenticatedUser";
 
-export default function ProfilePage() {
-  const posts = data.map((post) => {
-    return <Post key={post.id} {...post} />;
-  });
-
+export default function Profile() {
   const user = getAuthenticatedUser();
 
   return (
     <div className="content">
       <MyProfile user={user} />
-      {/*{posts} */}
     </div>
   );
 }

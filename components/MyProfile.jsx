@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import Grid from "./Grid";
+import data from "../pages/data";
 
 const MyProfile = ({ user }) => {
   return (
@@ -27,9 +29,17 @@ const MyProfile = ({ user }) => {
     //   </div>
     // </header>
     <div>
-      {/* TODO img */}
-      <Image className="profile__profile-picture" src={user.profilePicture} alt="" width={100} height={100} />
-      posts
+      <div className="content--inner profile__header">
+        <Image className="profile__profile-picture" src={user.profilePicture} alt="" width={77} height={77} />
+        <div>posts</div>
+        <div>followers</div>
+        <div>following</div>
+      </div>
+      <div className="content--inner profile__description">
+        <span className="profile__name">{user.name}</span>
+        <div>{user.description}</div>
+      </div>
+      <Grid user={user} />
     </div>
   );
 };

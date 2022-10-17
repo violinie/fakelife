@@ -1,5 +1,5 @@
 import data from "../pages/data";
 
 export const getAuthenticatedUser = () => {
-  return data[1];
+  return data[0];
 };
