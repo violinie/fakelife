@@ -57,7 +57,7 @@ const Footer = () => {
         <line fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
         <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" strokeLinejoin="round" strokeWidth="2"></polygon>
       </svg>
-      <Link href="/profile">
+      <Link href="/profilePage">
         <a className="icon__link">
           <Image className="profile-picture" src={user.profilePicture} alt="" width={24} height={24} />
         </a>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import MyProfile from "../components/MyProfile";
 import { getAuthenticatedUser } from "../model/getAuthenticatedUser";
 
-export default function Profile() {
+export default function ProfilePage() {
   const user = getAuthenticatedUser();
 
   return (
