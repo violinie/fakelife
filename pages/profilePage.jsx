@@ -1,4 +1,4 @@
-import Post from "../components/Post";
+import Post from "../components/PostGrid/Post";
 import data from "./data";
 import Link from "next/link";
 import Image from "next/image";

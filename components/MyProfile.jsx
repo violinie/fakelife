@@ -1,7 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
-import Grid from "./Grid";
-import data from "../pages/data";
+import { PostGrid } from "./PostGrid/PostGrid";
 
 const MyProfile = ({ user }) => {
   return (
@@ -39,7 +37,7 @@ const MyProfile = ({ user }) => {
         <span className="profile__name">{user.name}</span>
         <div>{user.description}</div>
       </div>
-      <Grid user={user} />
+      <PostGrid user={user} />
     </div>
   );
 };

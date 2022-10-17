@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Post from "./Post";
 
-const Grid = ({ user }) => {
+export const PostGrid = ({ user }) => {
   return (
     <>
       <div className="grid__header">
@@ -42,5 +42,3 @@ const Grid = ({ user }) => {
     </>
   );
 };
-
-export default Grid;
