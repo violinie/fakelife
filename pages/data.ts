@@ -1,4 +1,19 @@
-const data = [
+interface Data {
+  id: number;
+  userName: string;
+  name: string;
+  profilePicture: string;
+  description: string;
+  posts: Post[];
+}
+
+interface Post {
+  id: number;
+  coverImg: string;
+  description: string;
+}
+
+export const data: Data[] = [
   {
     id: 1,
     userName: "plant-app",
@@ -63,4 +78,4 @@ const data = [
   },
 ];
 
-export default data;
+
