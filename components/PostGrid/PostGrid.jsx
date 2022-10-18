@@ -6,12 +6,12 @@ export const PostGrid = ({ user }) => {
   return (
     <>
       <div className="grid__header">
-        <svg aria-label="Příspěvky" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
-          <rect fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="3"></rect>
-          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="9.015" x2="9.015" y1="3" y2="21"></line>
-          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="14.985" x2="14.985" y1="3" y2="21"></line>
-          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="9.015" y2="9.015"></line>
-          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="14.985" y2="14.985"></line>
+        <svg width="24" height="24" fill="#262626" ariaLabel="Příspěvky" color="#262626" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" strokeWidth="2" d="M3 3H21V21H3z"></path>
+          <path fill="none" stroke="currentColor" strokeWidth="2" d="M9.015 3L9.015 21"></path>
+          <path fill="none" stroke="currentColor" strokeWidth="2" d="M14.985 3L14.985 21"></path>
+          <path fill="none" stroke="currentColor" strokeWidth="2" d="M21 9.015L3 9.015"></path>
+          <path fill="none" stroke="currentColor" strokeWidth="2" d="M21 14.985L3 14.985"></path>
         </svg>
 
         <svg aria-label="Označení" color="#8e8e8e" fill="#8e8e8e" height="24" role="img" viewBox="0 0 24 24" width="24">

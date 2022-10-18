@@ -1,12 +1,10 @@
-import Post from "../components/PostGrid/Post";
-import data from "./data";
-import Link from "next/link";
-import Image from "next/image";
+import React from "react";
 import MyProfile from "../components/MyProfile";
 import { getAuthenticatedUser } from "../model/getAuthenticatedUser";
+import { Data } from "../data/data";
 
 export default function ProfilePage() {
-  const user = getAuthenticatedUser();
+  const user: Data = getAuthenticatedUser();
 
   return (
     <div className="content">
