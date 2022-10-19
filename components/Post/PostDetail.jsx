@@ -11,11 +11,11 @@ export default function PostDetail({ post, user }) {
     <div className="content">
       <PostHeader name={user.userName} />
       <PostImg source={post.coverImg} />
+      <PostBtns />
       <div className="content--inner">
-        <PostBtns />
         <PostLikes />
 
-        <small className="post__date ">září 13, 2019</small>
+        <small className="post__date ">{post.date}</small>
       </div>
     </div>
   );

@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function Post({ img, description }) {
   return (
     <>
-      <Link href="/postPage">
+      <Link href="/post">
         <a className="post__img">
-          <Image src={img} className="card__img" alt={description} layout="fill" />
+          <Image src={img} alt={description} layout="fill" />
         </a>
       </Link>
     </>

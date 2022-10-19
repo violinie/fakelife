@@ -144,15 +144,18 @@ a {
 
 .post__date {
   text-transform: uppercase;
+  color: #8e8e8e;
+  font-size: 0.75rem;
 }
 
 .post__likes {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .post__icons {
   display: flex;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
 }
