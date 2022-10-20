@@ -1,8 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { PostGrid } from "./PostGrid/PostGrid";
+import { followers } from "../data/followers";
 
 const MyProfile = ({ user }) => {
+  const numberOfPosts = user.posts.length;
+  const numOfFollowers = followers.filter((followers) => followers.userId === user.id).length;
+  const numOfFollowing = followers.filter((following) => following.followedByUserId === user.id).length;
+
   return (
     // <header className="profile__headercontent--inner">
     //   <Link href="/">
@@ -30,9 +35,20 @@ const MyProfile = ({ user }) => {
     <div>
       <div className="content--inner profile__header">
         <Image className="profile__profile-picture" src={user.profilePicture} alt="" width={77} height={77} />
-        <div>posts</div>
-        <div>followers</div>
-        <div>following</div>
+        <div className="profile__stat">
+          <div className="profile__stat-nums">{numberOfPosts}</div>
+          <div>Posts</div>
+        </div>
+        <div className="profile__stat">
+          <div className="profile__stat-nums">{numOfFollowers}</div>
+          <div>Followers</div>
+        </div>
+        <div className="profile__stat">
+          <div className="profile__stat-nums">{numOfFollowing}</div>
+          <div>Following</div>
+        </div>
+        <div></div>
+        <div></div>
       </div>
       <div className="content--inner profile__description">
         <span className="profile__name">{user.name}</span>
