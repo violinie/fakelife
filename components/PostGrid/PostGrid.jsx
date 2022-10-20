@@ -36,7 +36,7 @@ export const PostGrid = ({ user }) => {
       </div>
       <div className="grid__grid">
         {user.posts.map((post) => {
-          return <Post key={post.id} img={post.coverImg} description={post.description} />;
+          return <Post key={post.id} img={post.coverImg} description={post.description} id={post.id} />;
         })}
       </div>
     </>
