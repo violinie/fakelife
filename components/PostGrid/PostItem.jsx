@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Post({ img, description, id }) {
+export default function PostItem({ img, description, id }) {
   return (
     <>
       <Link href={`/post/${id}`}>

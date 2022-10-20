@@ -1,6 +1,4 @@
-import Link from "next/link";
-import Image from "next/image";
-import Post from "./Post";
+import PostItem from "./PostItem";
 
 export const PostGrid = ({ user }) => {
   return (
@@ -36,7 +34,7 @@ export const PostGrid = ({ user }) => {
       </div>
       <div className="grid__grid">
         {user.posts.map((post) => {
-          return <Post key={post.id} img={post.coverImg} description={post.description} id={post.id} />;
+          return <PostItem key={post.id} img={post.coverImg} description={post.description} id={post.id} />;
         })}
       </div>
     </>
