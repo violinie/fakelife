@@ -9,9 +9,9 @@ export default function PostDetail({ post, user }) {
   console.log(post);
   return (
     <div className="content">
-      <PostHeader name={user.userName} />
+      <PostHeader name={user.userName} img={user.profilePicture} />
       <PostImg source={post.coverImg} />
-      <PostBtns />
+      <PostBtns post={post} />
       <div className="content--inner">
         <PostLikes />
 
