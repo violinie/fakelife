@@ -36,10 +36,6 @@ const data: Data[] = users.map(user => {
   }
 });
 
-export const getPostById = (id: string) => {
-  return posts.find((post) => {
-    return String(post.id) === id;
-  });
-};
+
 
 export default data;

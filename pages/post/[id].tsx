@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import { getAuthenticatedUser } from "../../model/getAuthenticatedUser";
 import PostDetail from "../../components/Post/PostDetail";
 import { useRouter } from "next/router";
-import { getPostById, posts } from "../../data/data";
+import { getPostById } from "../../data/posts";
 
 export const PostPage: NextPage = () => {
   const { query } = useRouter();
