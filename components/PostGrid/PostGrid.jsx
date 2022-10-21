@@ -4,7 +4,7 @@ export const PostGrid = ({ user }) => {
   return (
     <>
       <div className="grid__header">
-        <svg width="24" height="24" fill="#262626" ariaLabel="Příspěvky" color="#262626" viewBox="0 0 24 24">
+        <svg width="24" height="24" fill="#262626" aria-label="Příspěvky" color="#262626" viewBox="0 0 24 24">
           <path fill="none" stroke="currentColor" strokeWidth="2" d="M3 3H21V21H3z"></path>
           <path fill="none" stroke="currentColor" strokeWidth="2" d="M9.015 3L9.015 21"></path>
           <path fill="none" stroke="currentColor" strokeWidth="2" d="M14.985 3L14.985 21"></path>
@@ -29,7 +29,7 @@ export const PostGrid = ({ user }) => {
             strokeLinejoin="round"
             strokeWidth="2"
           ></path>
-          <circle cx="12.072" cy="11.075" fill="none" r="3.556" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+          <circle cx="12.072" cy="11.075" fill="none" r="3.556" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></circle>
         </svg>
       </div>
       <div className="grid__grid">
